@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t udacity-c3-restapi-feed .
-  - docker tag simple-node herniated/udacity-c3-restapi-feed:latest
+  - docker tag udacity-c3-restapi-feed herniated/udacity-c3-restapi-feed:latest
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
